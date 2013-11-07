@@ -6,15 +6,15 @@
 }
 \arguments{
   \item{channel}{connection handle as returned by
-  \code{\link{odbcConnect}}}
+  \code{\link{odbcConnect}}.}
 
-  \item{query}{any valid SQL statement}
+  \item{query}{any valid SQL statement.}
 
   \item{...}{arguments to be passed to
-  \code{\link{sqlQuery}}}
+  \code{\link{sqlQuery}}.}
 }
 \value{
-  Values are same with \code{\link{sqlQuery}}
+  Values are same with \code{\link{sqlQuery}}.
 }
 \description{
   Submit each SQL query to a *.mdb database, and retrieve

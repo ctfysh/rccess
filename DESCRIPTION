@@ -6,8 +6,7 @@ Version: 0.1.0
 Authors@R: c(person("Hu", "Sheng", role = c("aut", "cre", "ths"), email =
     "shenghu@nju.edu.cn"))
 Depends:
-    R (>= 3.0.0)
-Imports:
+    R (>= 3.0.0),
     RODBC
 License: GPL-2 | GPL-3
 LazyData: true

@@ -4,6 +4,9 @@
 \alias{rccess-package}
 \title{rccess}
 \description{
-  rccess
+  rccess is a extension of the RODBC package.
+}
+\author{
+  Hu Sheng
 }
 

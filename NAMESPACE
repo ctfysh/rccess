@@ -1,4 +1,4 @@
-export(createmdb)
+export(createdb)
 export(querysep)
 export(sqlFields)
 export(sqlQuerys)

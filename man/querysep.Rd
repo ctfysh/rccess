@@ -5,10 +5,10 @@
   querysep(file)
 }
 \arguments{
-  \item{file}{the filename of SQL codes}
+  \item{file}{the filename of SQL codes.}
 }
 \value{
-  A string vector with several single SQL codes
+  A string vector with several single SQL codes.
 }
 \description{
   Separete the SQL codes into several single ones.
