@@ -8,7 +8,7 @@
   \item{channel}{connection handle as returned by
   \code{\link{odbcConnect}}.}
 
-  \item{query}{any valid SQL statement.}
+  \item{queries}{any valid SQL statement or statements.}
 
   \item{...}{arguments to be passed to
   \code{\link{sqlQuery}}.}

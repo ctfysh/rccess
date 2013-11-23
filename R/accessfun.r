@@ -51,7 +51,7 @@ createdb=function(dbname="newdb",extension=".mdb",
 #' Submit each SQL query to a *.mdb database, and retrieve the results.
 #' 
 #' @param channel connection handle as returned by \code{\link{odbcConnect}}.
-#' @param query any valid SQL statement.
+#' @param queries any valid SQL statement or statements.
 #' @param ... arguments to be passed to \code{\link{sqlQuery}}.
 #' @return Values are same with \code{\link{sqlQuery}}.
 #' @export
