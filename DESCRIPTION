@@ -10,6 +10,3 @@ Depends:
     RODBC
 License: GPL-2 | GPL-3
 LazyData: true
-Collate:
-    'rccess-package.r'
-    'accessfun.r'

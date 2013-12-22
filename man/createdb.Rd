@@ -2,9 +2,9 @@
 \alias{createdb}
 \title{Create a New *.mdb Database}
 \usage{
-  createdb(dbname = "newdb", extension = ".mdb",
-    emptydb = system.file(paste("emptydb/EmptyDB", extension, sep = ""), package = "rccess"),
-    dir = getwd(), ...)
+createdb(dbname = "newdb", extension = ".mdb",
+  emptydb = system.file(paste("emptydb/EmptyDB", extension, sep = ""), package
+  = "rccess"), dir = getwd(), ...)
 }
 \arguments{
   \item{dbname}{the database name which you create.}
@@ -19,10 +19,10 @@
   \code{\link{file.copy}}.}
 }
 \value{
-  A new *.mdb database.
+A new *.mdb database.
 }
 \description{
-  A new *.mdb database will be created by copying the
-  "EmptyDB.mdb" file with your database name.
+A new *.mdb database will be created by copying the
+"EmptyDB.mdb" file with your database name.
 }
 
