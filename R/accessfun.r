@@ -60,6 +60,22 @@ sqlQuerys=function(channel,queries,...){
     lapply(queries,sqlQuery,channel=channel,...)
 }
 
+#' Save a List into a Database
+#' 
+#' Save a list into a *.mdb database. The list should be a combination of 
+#' data frames.
+#' 
+#' @param channel connection handle as returned by \code{\link{odbcConnect}}.
+#' @param dat any valid list which is a list of data frames.
+#' @param ... arguments to be passed to \code{\link{sqlSave}}.
+#' @return Values are same with \code{\link{sqlSave}}.
+#' @export
+#' 
+list2db=function(channel,dat,...){
+    lapply(names(dat),function(x)sqlSave(channel,dat[[x]],tablename=x,
+                                         rownames=F,...))
+}
+
 #' Read Tables and Fields under Each Table in the Database
 #' 
 #' Create a list of the fields in each table.
