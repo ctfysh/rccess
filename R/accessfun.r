@@ -87,11 +87,12 @@ list2db=function(channel,dat,...){
 #' @return A list of the fields in each table will be returned.
 #' @export
 #' 
-sqlFields=function(channel,tableType="TABLE",...){
-    stb=sqlTables(channel,tableType=tableType,...)$TABLE_NAME
-    fld=lapply(stb,function(x) sqlColumns(channel,x,...)$COLUMN_NAME)
-    names(fld)=stb
-    return(fld)
+sqlFields=function(channel,...){
+  stb=sqlTables(channel,...)$TABLE_NAME
+  stb=gsub("['\\$]","",stb)
+  fld=lapply(stb,function(x) sqlColumns(channel,x,...)$COLUMN_NAME)
+  names(fld)=stb
+  return(fld)
 }
 
 
