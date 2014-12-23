@@ -81,15 +81,12 @@ list2db=function(channel,dat,...){
 #' Create a list of the fields in each table.
 #' 
 #' @param channel connection handle as returned by \code{\link{odbcConnect}}.
-#' @param tableType specify zero or more types in separate elements of a 
-#' character vector.
 #' @param ... arguments to be passed to \code{\link{file.copy}}.
 #' @return A list of the fields in each table will be returned.
 #' @export
 #' 
 sqlFields=function(channel,...){
   stb=sqlTables(channel,...)$TABLE_NAME
-  stb=gsub("['\\$]","",stb)
   fld=lapply(stb,function(x) sqlColumns(channel,x,...)$COLUMN_NAME)
   names(fld)=stb
   return(fld)
